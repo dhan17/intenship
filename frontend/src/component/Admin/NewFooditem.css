@@ -1,0 +1,146 @@
+.newFooditemContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    margin-bottom: -10vmax;
+}
+
+.newFooditemContainer h1 {
+    color: black;
+    font-size: 3vmax;
+    padding: 1.5vmax;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.createFooditemForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 30vmax;
+    background-color: white;
+}
+
+.createFooditemForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.createFooditemForm>div>input,
+.createFooditemForm>div>select,
+.createFooditemForm>div>textarea {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+
+.createFooditemForm>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.7vmax;
+    color: rgb(73, 73, 73);
+}
+
+#createFooditemFormFile>input {
+    display: flex;
+    padding: 0%;
+}
+
+#createFooditemFormFile>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 6vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+}
+
+#createFooditemFormFile>input::file-selector-button:hover {
+    background-color: rgb(250, 191, 181);
+}
+
+
+#createFooditemFormImage {
+    width: 30vmax;
+    overflow: auto !important;
+}
+
+#createFooditemFormImage>img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+}
+
+#createFooditemBtn {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax;
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 2vmax;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+#createFooditemBtn:hover {
+    background-color: rgb(170, 47, 26);
+}
+
+@media screen and (max-width: 600px) {
+    .newFooditemContainer {
+        background-color: white;
+    }
+
+    .createFooditemForm {
+        padding: 2vmax;
+        width: 45vmax;
+    }
+
+    .createFooditemForm>div>input,
+    .createFooditemForm>div>select,
+    .createFooditemForm>div>textarea {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+
+
+    #createFooditemFormImage {
+        width: 40vmax;
+        overflow: auto !important;
+    }
+
+    .createFooditemForm>div>svg {
+        font-size: 2.8vmax;
+    }
+
+    #createFooditemFormFile>img {
+        width: 8vmax;
+        border-radius: 100%;
+    }
+
+    #createFooditemFormFile>input::file-selector-button {
+        height: 7vh;
+        font: 400 1.8vmax cursive;
+    }
+}

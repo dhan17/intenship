@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    margin: 1vmax auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid black;
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+}
+
+.menu {
+    text-align: center;
+    font-size: 2vmax;
+    margin: 5vmax auto;
+    padding: 5vmax 0 5vmax;
+}
+
+.menu-btn {
+    background-color: tomato;
+    border-radius: 5%;
+    padding: 5vmax 7vmax;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.menu-btn:hover {
+    color: white;
+    font-size: large;
+    transform: translateY(1vmax);
+}
+
+.services {
+    display: flex;
+    align-items: center;
+}
+
+.services>div {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    padding: 0 5vmax;
+}
+
+.services>div>svg {
+    color: tomato;
+    height: 50px;
+    width: 50px;
+    margin: 2vmax;
+}
+
+@media screen and (max-width: 600px){
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services>div {
+        align-items: center;
+        text-align: center;
+        padding: 0 5vmax;
+        font-size: 10px;
+    }
+    
+    .services>div>h3 {
+        font-size: 15px !important;
+    }
+
+    .services>div>svg {
+        color: tomato;
+        height: 30px;
+        width: 30px;
+        margin: 2vmax;
+    }
+}

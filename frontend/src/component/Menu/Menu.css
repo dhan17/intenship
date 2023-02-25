@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    margin: 1vmax auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 20vh;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2vmax;
+    border-bottom: 1px solid black;
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+}
+
+.foodCard {
+    width: 16vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border: 1px solid rgb(255, 220, 225);
+}
+
+.foodCard > img {
+    width: 16vmax;
+}
+
+.foodCard > p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+    color: black;
+}
+
+.foodCard > div > p {
+    font-size: 1vmax;
+    margin: 0.5vmax;
+    color: rgb(65, 48, 48);
+}
+
+.foodCard > span {
+    margin: 0.5vmax;
+    font-size: 1.2vmax;
+    color: tomato;
+    font-weight: bold;
+}
+
+.foodCard:hover {
+    box-shadow: 0 0 5px palevioletred;
+    transform: translateY(-1vmax);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.page-link {
+    text-decoration: none;
+    color: black !important;
+}
+
+.pageLinkActive {
+    background-color: tomato !important;
+    text-decoration: none;
+    color: white !important;
+}
+
+.pageLinkActive:hover {
+    background-color: rgb(255, 220, 225) !important;
+    color: black !important;
+}
+
+.page-item:hover .page-link {
+    background-color: rgb(255, 220, 225) !important;
+}
+
+.filter {
+    width: 8.5vmax;
+    position: absolute;
+    top: 20vmax;
+    left: 2vmax;
+}
+
+.canteens {
+    padding: 0;
+}
+
+.canteen-link {
+    list-style: none;
+    color: black;
+    font: 400 1.2vmax "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.canteen-link:hover {
+    color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    .foodCard > p {
+        font-size: 1.7vmax;
+    }
+
+    .filter {
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link {
+        font: 300 1.7vmax "Roboto";
+    }
+
+    .canteen-link {
+        font: 400 2vmax "Roboto";
+    }
+}

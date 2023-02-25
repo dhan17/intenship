@@ -1,0 +1,48 @@
+.aboutPage {
+    height: 100%;
+    max-width: 100%;
+    padding: 2vmax;
+    margin-bottom: -10vmax;
+}
+
+.aboutContainer {
+    align-items: center;
+    margin: 0 10vmax;
+}
+
+.aboutContainer>p {
+    word-spacing: 5px;
+    text-align: center;
+}
+
+.aboutContainer>p>span {
+    font-size: larger;
+    font-weight: bold;
+    color: tomato;
+}
+
+.aboutContainer>div {
+    text-align: center;
+    margin-top: 10vmax;
+    font-family: 'Grape Nuts';
+}
+
+.aboutHeading {
+    text-align: center;
+    font-size: 2vmax;
+    border-bottom: 1px solid black;
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 3vmax auto;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutPage {
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .aboutContainer {
+        margin: 5vmax;
+    }
+}

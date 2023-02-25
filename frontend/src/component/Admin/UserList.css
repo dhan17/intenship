@@ -1,0 +1,47 @@
+.userListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#userListHeading {
+    color: black;
+    font-size: 3vmax;
+    padding: 1.5vmax;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.userListTable {
+    border: none !important;
+}
+
+.userListTable div {
+    font-size: 1vmax;
+    border: none !important;
+}
+
+.userListTable a {
+    color: blue;
+    transition: all 0.5s;
+}
+
+.userListTable button {
+    color: red;
+    transition: all 0.5s;
+}
+
+.userListTable a:hover,
+.userListTable button:hover {
+    color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    .userListTable div {
+        font-size: 1vmax;
+    }
+}

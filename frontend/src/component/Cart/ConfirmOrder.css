@@ -1,0 +1,223 @@
+.confirmPage {
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+
+.confirmPage>div:last-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.247);
+}
+
+.confirmArea {
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+
+.confirmArea>p {
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.confirmAreaBox,
+.confirmCartItemsContainer {
+    margin: 2vmax;
+}
+
+.confirmAreaBox>div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.confirmAreaBox>div>p {
+    font-size: 1.3vmax;
+    font-weight: 600;
+}
+
+.confirmAreaBox>div>span {
+    margin: 0 1vmax;
+    font-size: 1.3vmax;
+    font-weight: 400;
+}
+
+.confirmCartItems>p {
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.confirmCartItemsContainer {
+    max-height: 20vmax;
+    overflow-y: auto;
+}
+
+.confirmCartItemsContainer>div {
+    display: flex;
+    font: 400 1vmax;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirmCartItemsContainer>div>img {
+    width: 8vmax;
+    margin-top: 1vmax;
+    border-radius: 2vmax;
+}
+
+.confirmCartItemsContainer>div>a {
+    color: tomato;
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+}
+
+.confirmCartItemsContainer>div>span {
+    font: 100 1vmax;
+    color: #5e5e5e;
+    margin-right: 1vmax;
+}
+
+.orderSummary {
+    padding: 2vmax 7vmax;
+}
+
+.orderSummary>p {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.orderSummary>div>div {
+    display: flex;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.orderSummary>div>div>span {
+    color: black;
+}
+
+.orderTotal {
+    display: flex;
+    font-size: 1.5vmax;
+    font-weight: 600;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 2vmax 0;
+}
+
+.orderTotal>span {
+    color: rgb(99, 33, 33);
+}
+
+.orderSummary>button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: tomato;
+    font: 500 0.7vmax;
+    border-radius: 10px;
+    padding: 1vmax;
+    margin: auto;
+    outline: none;
+    width: 100%;
+}
+
+.orderSummary>button:hover {
+    background-color: rgb(99, 33, 33);
+    box-shadow: 0px 15px 20px rgb(252, 162, 146);
+    transform: translateY(-0.1vmax);
+}
+
+@media screen and (max-width: 600px) {
+    .confirmPage {
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+
+    .confirmPage>div:last-child {
+        border-left: 0;
+        border-top: 1px dotted black;
+    }
+
+    .confirmArea>p {
+        font-size: 3vmax;
+    }
+
+    .confirmAreaBoxBox>div {
+        display: flex;
+        margin: 6vw 0;
+    }
+
+    .confirmAreaBox>div>p {
+        font-size: 2vmax;
+        font-weight: 600;
+    }
+
+    .confirmAreaBox>div>span {
+        font-size: 2vmax;
+    }
+
+    .confirmCartItems>p {
+        font-size: 3vmax;
+    }
+
+    .confirmCartItemsContainer {
+        max-height: 50vw;
+    }
+
+    .confirmCartItemsContainer>div {
+        font-size: 2vmax;
+        margin: 4vw 0;
+    }
+
+    .confirmCartItemsContainer>div>img {
+        width: 10vw;
+    }
+
+    .confirmCartItemsContainer>div>a {
+        margin: 0;
+        width: 30%;
+    }
+
+    .confirmCartItemsContainer>div>span {
+        font-size: 2vmax;
+    }
+
+    .orderSummary {
+        padding: 12vw;
+    }
+
+    .orderSummary>p {
+        font-size: 3vmax;
+        padding: 4vw;
+    }
+
+    .orderSummary>div>div {
+        font-size: 2vmax;
+        font-weight: 600;
+    }
+
+    .orderTotal {
+        font-size: 2vmax;
+        padding: 5vw 0;
+    }
+
+    .orderSummary>button {
+        padding: 4vw;
+        margin: 4vw auto;
+        font: 400 4vw;
+    }
+}

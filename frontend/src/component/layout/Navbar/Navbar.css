@@ -1,0 +1,44 @@
+.top-bar{
+    width: 100%;
+    height: 6vmax;
+    background-color: tomato;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 5vmax;
+    width: auto;
+    padding-left: 2vmax;
+}
+
+.top-left, .top-right{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar-item {
+    font-size: 1.6vmax;
+    cursor: pointer;
+    margin: 2vmax;
+}
+
+.top-bar > .top-right > .navbar-icons {
+    float: right;
+}
+
+.top-bar > .top-right > .navbar-icons > a {
+    margin: 2vmax;
+    color: white;
+}

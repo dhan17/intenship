@@ -1,0 +1,120 @@
+.shippingContainer {
+    background-color: rgb(255, 237, 234);
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+    margin-bottom: -10vmax;
+}
+
+.shippingBox {
+    margin-top: 2vmax;
+    background-color: white;
+    width: 35vw;
+    overflow: hidden;
+    height: 70vh;
+    box-sizing: border-box;
+    margin-bottom: 2vmax;
+    border-radius: 0.8vmax;
+}
+
+.shippingHeading {
+    text-align: center;
+    color: black;
+    font-size: 2vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.3vmax;
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+
+.shippingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 80%;
+    transition: all 0.5s;
+}
+
+.shippingForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.shippingForm>div>input,
+.shippingForm>div>select {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 300 0.9vmax;
+    outline: none;
+}
+
+.shippingForm>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgb(73, 73, 73);
+}
+
+.shippingBtn {
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    background-color: tomato;
+    font: 500 0.7vmax;
+    border-radius: 10px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+    width: 100%;
+    margin-bottom: -2vmax;
+}
+
+.shippingBtn:hover {
+    background-color: rgb(99, 33, 33);
+    box-shadow: 0px 15px 20px rgb(252, 162, 146);
+    transform: translateY(-0.1vmax);
+}
+
+@media screen and (max-width: 600px) {
+    .shippingBox {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .shippingHeading {
+        font-size: 4vmax;
+        padding: 2vmax;
+    }
+
+    .shippingForm {
+        padding: 10vmax;
+    }
+
+    .shippingForm>div>input,
+    .shippingForm>div>select {
+        padding: 2vmax 8vmax;
+        font-size: 2vmax;
+    }
+
+    .shippingForm>div>svg {
+        font-size: 4vmax;
+        transform: translateX(3vw);
+    }
+
+    .shippingBtn {
+        padding: 2vmax;
+    }
+}

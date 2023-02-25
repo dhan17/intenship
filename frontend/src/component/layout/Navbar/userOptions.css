@@ -1,0 +1,15 @@
+.speedDial {
+    position: fixed;
+    top: 1vmax;
+    right: 1vmax;
+}
+
+.speedDialIcon {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+
+.MuiSpeedDial-fab {
+    background-color: tomato !important;
+}

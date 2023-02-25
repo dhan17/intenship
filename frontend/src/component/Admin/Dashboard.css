@@ -1,0 +1,105 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.dashboardContainer {
+    margin-bottom: -8vmax;
+}
+
+.dashboardContainer>h1 {
+    color: black;
+    font-size: 3vmax;
+    padding: 1.5vmax;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.dashboardSummary {
+    margin: 1vmax 0;
+}
+
+.dashboardSummary>div {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardSummary>div>p {
+    background-color: tomato;
+    color: white;
+    padding: 1vmax;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vmax;
+}
+
+.dashboardSummary-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboardSummary-2>a {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 220, 225);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    flex-direction: column;
+    padding: 1vmax;
+    border-radius: 100%;
+    margin: 1vmax;
+    height: 10vmax;
+    width: 10vmax;
+    font-size: 1.5vmax;
+    font-weight: 400;
+}
+
+.dashboardSummary-2>a:hover {
+    text-decoration: none;
+    color: tomato;
+}
+
+.lineChart {
+    width: 50%;
+    margin: 2vmax auto;
+}
+
+.doughnutChart {
+    width: 50%;
+    margin: 2vmax auto;
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboardSummary > div > p {
+        margin: 0;
+    }
+
+    .dashboardSummary-2 > a {
+        padding: 1.5vmax;
+        margin: 1vmax;
+        font-size: 1.7vmax;
+        height: 13vmax;
+        width: 13vmax;
+    }
+
+    .lineChart {
+        width: 80%;
+        margin: 2vmax auto;
+    }
+
+    .doughnutChart {
+        width: 70%;
+        margin: 2vmax auto;
+    }
+}

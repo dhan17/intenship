@@ -1,0 +1,47 @@
+.ordersListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#ordersListHeading {
+    color: black;
+    font-size: 3vmax;
+    padding: 1.5vmax;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.ordersListTable {
+    border: none !important;
+}
+
+.ordersListTable div {
+    font-size: 1vmax;
+    border: none !important;
+}
+
+.ordersListTable a {
+    color: blue;
+    transition: all 0.5s;
+}
+
+.ordersListTable button {
+    color: red;
+    transition: all 0.5s;
+}
+
+.ordersListTable a:hover,
+.ordersListTable button:hover {
+    color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    .ordersListTable div {
+        font-size: 1vmax;
+    }
+}

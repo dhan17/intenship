@@ -1,0 +1,47 @@
+.fooditemsListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#fooditemsListHeading {
+    color: black;
+    font-size: 3vmax;
+    padding: 1.5vmax;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.fooditemsListTable {
+    border: none !important;
+}
+
+.fooditemsListTable div {
+    font-size: 1vmax;
+    border: none !important;
+}
+
+.fooditemsListTable a {
+    color: blue;
+    transition: all 0.5s;
+}
+
+.fooditemsListTable button {
+    color: red;
+    transition: all 0.5s;
+}
+
+.fooditemsListTable a:hover,
+.fooditemsListTable button:hover {
+    color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+    .fooditemsListTable div {
+        font-size: 1vmax;
+    }
+}

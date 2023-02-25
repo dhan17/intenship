@@ -1,0 +1,145 @@
+.UpdateProfileContainer {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -10vmax;
+    background-color: rgb(255, 244, 242);
+    top: 0%;
+    left: 0;
+}
+
+.UpdateProfileBox {
+    width: 30vw;
+    background-color: white;
+    height: 90vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.UpdateProfileBox>h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.7vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.3vmax;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: auto;
+}
+
+.Updateform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    height: 70%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+
+.Updateform>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 1vmax;
+    height: 70%;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.Updateform>div>input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+
+.Updateform>div>svg {
+    position: absolute;
+    transform: translateX(-10vmax);
+    color: rgb(73, 73, 73);
+    font-size: 1.7vmax;
+}
+
+.UpdateProfileButton {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax;
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top: 2vmax;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.UpdateProfileButton:hover {
+    background-color: rgb(170, 47, 26);
+}
+
+#updateProfileImage>img {
+    width: 3vmax;
+    position: absolute;
+    border-radius: 100%;
+    transform: translateX(-10vmax);
+}
+
+#updateProfileImage>input {
+    display: flex;
+    padding: 0%;
+    margin-left: 5vmax;
+    width: 80%;
+}
+
+#updateProfileImage>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 6vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+}
+
+#updateProfileImage>input::file-selector-button:hover {
+    background-color: rgb(250, 191, 181);
+}
+
+@media screen and (max-width: 600px) {
+    .UpdateProfileContainer {
+        background-color: white;
+    }
+
+    .UpdateProfileBox {
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .Updateform {
+        padding: 6vmax;
+    }
+
+    .Updateform>div>svg {
+        font-size: 2.8vmax;
+    }
+}
