@@ -60,7 +60,7 @@ const Menu = (props) => {
         <Loading />
       ) : (
         <Fragment>
-          <Metadata title="Digital Bhojnalaya Menu 🍴"/>
+          <Metadata title="Menu"/>
           <h2 className="heading">Menu</h2>
 
           <div className="container" id="container">

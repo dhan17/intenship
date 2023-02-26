@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { useState } from "react";
 import useViewport from "../../../viewport/useViewport";
 import { NavLink } from "react-router-dom";
-import logo from "../../../images/digitalLogo.png";
+import logo from "../../../images/img.png";
 import Search from "@mui/icons-material/SearchOutlined"
 import Cart from "@mui/icons-material/ShoppingCart";
 import Account from "@mui/icons-material/AccountCircle";

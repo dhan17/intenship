@@ -16,9 +16,9 @@ const Sidebar = () => {
   return (
     <Fragment>
       <div className="sidebar">
-        <Link to="/">
+        {/* <Link to="/">
           <img src={logo} alt="Digital Bhojnalaya" />
-        </Link>
+        </Link> */}
 
         <Link to="/admin/dashboard">
           <p>

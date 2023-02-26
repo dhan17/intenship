@@ -10,7 +10,7 @@ import PaymentsIcon from "@mui/icons-material/Payments";
 const Home = () => {
   return (
     <Fragment>
-      <Metadata title="Digital Bhojnalaya" />
+      <Metadata title="Home Delivery" />
 
       <CarouselPart />
 

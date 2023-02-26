@@ -10,7 +10,7 @@ const About = () => {
         <div className="aboutContainer">
           <h1 className="aboutHeading">About Us</h1>
           <p>
-            <span>Digital Bhojnalaya</span> is a food ordering website that allows
+            <span>Home Delivery</span> is a food ordering website that allows
             users to surf the menu and choose the fooditems of their choice and
             place orders.
             <br />
