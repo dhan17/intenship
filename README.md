@@ -1,4 +1,4 @@
-# digital-bhojanalay
+# Home Delivery
 
 ## env variables ~backend/config/config.env
 ```
