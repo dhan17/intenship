@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { Slider } from "@material-ui/core";
 import Metadata from "../../component/layout/Metadata";
 
-const canteens = ["Shanus", "Mukku"];
+const canteens = ["Shanus", "Mukku","New Star"];
 
 const Menu = (props) => {
   const dispatch = useDispatch();
