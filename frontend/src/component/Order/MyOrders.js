@@ -96,7 +96,7 @@ const MyOrders = () => {
     {
       field :"delete",
       flex :0.3,
-      headerName:"Delete",
+      headerName:"Cancel",
       minWidth:150,
       type:"number",
       sortable:false,
