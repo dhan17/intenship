@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./MyOrders.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { DataGrid } from "@mui/x-data-grid";
 import Loading from "../layout/Loading/Loading.js";
 import Metadata from "../layout/Metadata";
@@ -8,12 +8,42 @@ import { useSelector, useDispatch } from "react-redux";
 import { clearErrors, myOrders } from "../../actions/orderAction";
 import Typography from "@material-ui/core/Typography";
 import LaunchIcon from "@mui/icons-material/Launch";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { Button } from "@mui/material";
+import {deleteOrder,getAllOrders
+} from "../../actions/orderAction";
+import { DELETE_ORDER_RESET } from "../../constants/orderConstants";
 
 const MyOrders = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { loading, error, orders } = useSelector((state) => state.myOrders);
   const { user } = useSelector((state) => state.user);
+  const { error: deleteError, isDeleted } = useSelector((state) => state.order);
+
+  const deleteOrderHandler = (id) => {
+    dispatch(deleteOrder(id));
+  };
+  useEffect(() => {
+    if (error) {
+      window.alert(error);
+      dispatch(clearErrors());
+    }
+
+    if (deleteError) {
+      window.alert(deleteError);
+      dispatch(clearErrors());
+    }
+
+    if (isDeleted) {
+      window.alert("Order Deleted Successfully!");
+      navigate("/Order");
+      dispatch({ type: DELETE_ORDER_RESET });
+    }
+
+    dispatch(getAllOrders());
+  }, [dispatch, error, deleteError, isDeleted, navigate]);
 
   const rows = [];
   const columns = [
@@ -63,6 +93,28 @@ const MyOrders = () => {
         );
       },
     },
+    {
+      field :"delete",
+      flex :0.3,
+      headerName:"Delete",
+      minWidth:150,
+      type:"number",
+      sortable:false,
+      renderCell:(params)=>{
+        return (
+
+      
+      <Button
+              onClick={() =>
+                deleteOrderHandler(params.getValue(params.id, "id"))
+              }
+            >
+              <DeleteIcon />
+            </Button>
+        );
+    }
+  }
+    
   ];
 
   orders &&
