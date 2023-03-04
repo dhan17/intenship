@@ -37,7 +37,7 @@ const MyOrders = () => {
     }
 
     if (isDeleted) {
-      window.alert("Order Deleted Successfully!");
+      window.alert("Order cancelled Successfully!");
       navigate("/Order");
       dispatch({ type: DELETE_ORDER_RESET });
     }
