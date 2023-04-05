@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { Slider } from "@material-ui/core";
 import Metadata from "../../component/layout/Metadata";
 
-const canteens = ["Shanus", "Mukku","New Star"];
+const canteens = ["Veg", "Non-Veg",];
 
 const Menu = (props) => {
   const dispatch = useDispatch();
@@ -90,7 +90,7 @@ const Menu = (props) => {
               max={10000}
             />
 
-            <Typography>Canteens</Typography>
+            <Typography>Types</Typography>
             <ul className="canteens">
               {canteens.map((canteen_name) => (
                 <li
